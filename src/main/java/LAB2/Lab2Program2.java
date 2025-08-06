@@ -1,4 +1,4 @@
-package lab1package;
+package LAB2;
 
 abstract class Account1 {
     long accNum;

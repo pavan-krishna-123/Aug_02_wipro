@@ -1,4 +1,4 @@
-package lab1package;
+package LAB2;
 
 
 class Account {
