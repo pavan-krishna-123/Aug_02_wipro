@@ -4,27 +4,31 @@ import java.io.*;
 
 public class Lab4program1 {
     public static void main(String[] args) {
-        File file = new File("file.txt");
-
-        try (FileReader reader = new FileReader(file);
-             FileWriter writer = new FileWriter(file, false))
-        {
-
-           
-            StringBuilder content = new StringBuilder();
-            int ch;
-            while ((ch = reader.read()) != -1) 
-            {
-                content.append((char) ch);
-            }
-            content.reverse();
-            writer.write(content.toString());
-
-            System.out.println("File content reversed and written back.");
-        } 
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+       
+        try {
+			FileReader fr=new FileReader("file.txt");
+			
+			StringBuffer sb=new StringBuffer();
+			int ch;
+			while((ch=fr.read())!=-1) {
+				sb.append((char)ch);
+			}
+			fr.close();
+			
+			String revContent=sb.reverse().toString();
+			
+			FileWriter fw=new FileWriter("file.txt");
+			fw.write(revContent);
+			fw.close();
+			
+			System.out.println("File content reversed");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 }
