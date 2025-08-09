@@ -1,6 +1,6 @@
 package lab1package;
 
-public class ClassAndSettersAndGetters
+public class Lab1program6And7And8
 {
 	enum Gen{
 		M,F
@@ -11,7 +11,7 @@ public class ClassAndSettersAndGetters
 	String phonenumber;
 	
 	
-	ClassAndSettersAndGetters(String firstName,String lastName,Gen Gender,String phonenumber)
+	Lab1program6And7And8(String firstName,String lastName,Gen Gender,String phonenumber)
 	{
 		this.firstName=firstName;
 		this.lastName=lastName;
@@ -51,7 +51,7 @@ public class ClassAndSettersAndGetters
 	}
 	public static void main(String[] args)
 	{
-		ClassAndSettersAndGetters obj =new ClassAndSettersAndGetters("pavan","kancharla",Gen.M,"9392690658");
+		Lab1program6And7And8 obj =new Lab1program6And7And8("pavan","kancharla",Gen.M,"9392690658");
 		obj.display();
 	}
 }

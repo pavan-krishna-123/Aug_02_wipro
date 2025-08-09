@@ -1,6 +1,6 @@
 package lab1package;
 
-public class StringOperations 
+public class Lab1program9
 {
 
 	public static void main(String[] args) 

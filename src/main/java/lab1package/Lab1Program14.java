@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
-public class Program14 {
+public class Lab1Program14 {
 
     public static void TimeZone(String country) {
         try {

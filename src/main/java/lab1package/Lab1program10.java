@@ -1,6 +1,6 @@
 package lab1package;
 
-public class PositiveStringCheck
+public class Lab1program10
 {
 		public static boolean PositiveString(String temp)
 		{

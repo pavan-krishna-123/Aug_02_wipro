@@ -1,6 +1,6 @@
 package lab1package;
 
-public class CommandLineArguments {
+public class Lab1program5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
